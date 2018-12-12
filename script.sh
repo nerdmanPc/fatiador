@@ -1,0 +1,1 @@
+g++ -o bin/main source/main.cpp -lCGAL

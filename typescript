@@ -1,0 +1,140 @@
+Script iniciado em 2018-12-11 21:40:31-0300
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ g++ -o main main.cpp -lCGAL./main ./data/mesh.off ./data/out.off[10Pg++ -o main main.cpp -lCGAL[Kg++ -o main main.cpp -lCGAL[Kman git
+[?1049h[22;0;0t[?1h=GIT(1)                                                                                                                            Git Manual                                                                                                                           GIT(1)[m
+[m
+[1mNAME[0m[m
+       git - the stupid content tracker[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [--version] [--help] [-C <path>] [-c <name>=<value>][m
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path][m
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare][m
+[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K...skipping...
+GIT(1)                                                                                                                            Git Manual                                                                                                                           GIT(1)[m
+[m
+[1mNAME[0m[m
+       git - the stupid content tracker[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [--version] [--help] [-C <path>] [-c <name>=<value>][m
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path][m
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare][m
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>][m
+           [--super-prefix=<path>][m
+           <command> [<args>][m
+[m
+[1mDESCRIPTION[0m[m
+       Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals.[m
+[m
+       See [1mgittutorial[0m(7) to get started, then see [1mgiteveryday[0m(7) for a useful minimum set of commands. The [1mGit[0m [1mUser’s[0m [1mManual[0m[1] has a more in-depth introduction.[m
+[m
+       After you mastered the basic concepts, you can come back to this page to learn what commands Git offers. You can learn more about individual Git commands with "git help command". [1mgitcli[0m(7) manual page gives you an overview of the command-line command syntax.[m
+[m
+       A formatted and hyperlinked copy of the latest Git documentation can be viewed at [1mhttps://git.github.io/htmldocs/git.html[0m.[m
+[m
+[1mOPTIONS[0m[m
+       --version[m
+           Prints the Git suite version that the [4mgit[24m program came from.[m
+[m
+       --help[m
+           Prints the synopsis and a list of the most commonly used commands. If the option [1m--all[0m or [1m-a[0m is given then all available commands are printed. If a Git command is named this option will bring up the manual page for that command.[m
+[m
+           Other options are available to control how the manual page is displayed. See [1mgit-help[0m(1) for more information, because [1mgit[0m [1m--help[0m [1m...[0m  is converted internally into [1mgit[0m [1mhelp[0m [1m...[0m.[m
+[m
+       -C <path>[m
+           Run as if git was started in [4m<path>[24m instead of the current working directory. When multiple [1m-C[0m options are given, each subsequent non-absolute [1m-C[0m [1m<path>[0m is interpreted relative to the preceding [1m-C[0m [1m<path>[0m.[m
+[m
+           This option affects options that expect path name like [1m--git-dir[0m and [1m--work-tree[0m in that their interpretations of the path names would be made relative to the working directory caused by the [1m-C[0m option. For example the following invocations are equivalent:[m
+[m
+               git --git-dir=a.git --work-tree=b -C c status[m
+               git --git-dir=c/a.git --work-tree=c/b status[m
+[m
+       -c <name>=<value>[m
+           Pass a configuration parameter to the command. The value given will override values from configuration files. The <name> is expected in the same format as listed by [4mgit[24m [4mconfig[24m (subkeys separated by dots).[m
+[m
+           Note that omitting the [1m=[0m in [1mgit[0m [1m-c[0m [1mfoo.bar[0m [1m...[0m  is allowed and sets [1mfoo.bar[0m to the boolean true value (just like [1m[foo]bar[0m would in a config file). Including the equals but with an empty value (like [1mgit[0m [1m-c[0m [1mfoo.bar=[0m [1m...[0m) sets [1mfoo.bar[0m to the empty string which[m
+           [1mgit[0m [1mconfig[0m [1m--bool[0m will convert to [1mfalse[0m.[m
+[m
+       --exec-path[=<path>][m
+           Path to wherever your core Git programs are installed. This can also be controlled by setting the GIT_EXEC_PATH environment variable. If no path is given, [4mgit[24m will print the current setting and then exit.[m
+[m
+       --html-path[m
+           Print the path, without trailing slash, where Git’s HTML documentation is installed and exit.[m
+[m
+       --man-path[m
+           Print the manpath (see [1mman(1)[0m) for the man pages for this version of Git and exit.[m
+[m
+[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[H[2J[H[H[2J[HGIT(1)                                                                              [m                                               Git Manual                            [m                                                                                     [m            GIT(1)[m
+[m
+[1mNAME[0m[m
+       git - the stupid content tracker[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [--version] [--help] [-C <path>] [-c <name>=<value>][m
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path][m
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare][m
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>][m
+           [--super-prefix=<path>][m
+           <command> [<args>][m
+[m
+[1mDESCRIPTION[0m[m
+       Git is a fast, scalable, distributed revision control system with an unusuall[m y rich command set that provides both high-level operations and full access to inter[m nals.[m
+[m
+       See [1mgittutorial[0m(7) to get started, then see [1mgiteveryday[0m(7) for a useful minim[m um set of commands. The [1mGit[0m [1mUser’s[0m [1mManual[0m[1] has a more in-depth introduction.[m
+[m
+       After you mastered the basic concepts, you can come back to this page to lear[m n what commands Git offers. You can learn more about individual Git commands with "g[m it help command". [1mgitcli[0m(7) manual page gives you an overview of the command-line co[m mmand syntax.[m
+[m
+       A formatted and hyperlinked copy of the latest Git documentation can be viewe[m d at [1mhttps://git.github.io/htmldocs/git.html[0m.[m
+[m
+[1mOPTIONS[0m[m
+       --version[m
+           Prints the Git suite version that the [4mgit[24m program came from.[m
+[m
+       --help[m
+[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[H[2J[H[H[2J[HGIT(1)                                                                                                              [m               Git Manual                                                                                            [m                                GIT(1)[m
+[m
+[1mNAME[0m[m
+       git - the stupid content tracker[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [--version] [--help] [-C <path>] [-c <name>=<value>][m
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path][m
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare][m
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>][m
+           [--super-prefix=<path>][m
+           <command> [<args>][m
+[m
+[1mDESCRIPTION[0m[m
+       Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides[m  both high-level operations and full access to internals.[m
+[m
+       See [1mgittutorial[0m(7) to get started, then see [1mgiteveryday[0m(7) for a useful minimum set of commands. The [1mGit[0m [1mUser[0m[m [1m’s[0m [1mManual[0m[1] has a more in-depth introduction.[m
+[m
+       After you mastered the basic concepts, you can come back to this page to learn what commands Git offers. You [m can learn more about individual Git commands with "git help command". [1mgitcli[0m(7) manual page gives you an overview of[m  the command-line command syntax.[m
+[m
+       A formatted and hyperlinked copy of the latest Git documentation can be viewed at [1mhttps://git.github.io/htmld[0m[m [1mocs/git.html[0m.[m
+[m
+[1mOPTIONS[0m[m
+       --version[m
+           Prints the Git suite version that the [4mgit[24m program came from.[m
+[m
+       --help[m
+           Prints the synopsis and a list of the most commonly used commands. If the option [1m--all[0m or [1m-a[0m is given the[m n all available commands are printed. If a Git command is named this option will bring up the manual page for that c[m ommand.[m
+[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Other options are available to control how the manual page is displayed. See [1mgit-help[0m(1) for more informa[m [7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Ktion, because [1mgit[0m [1m--help[0m [1m...[0m  is converted internally into [1mgit[0m [1mhelp[0m [1m...[0m.[m
+[7m Manual page git(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -C <path>[m
+[7m Manual page git(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Run as if git was started in [4m<path>[24m instead of the current working directory. When multiple [1m-C[0m options ar[m [7m Manual page git(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Ke given, each subsequent non-absolute [1m-C[0m [1m<path>[0m is interpreted relative to the preceding [1m-C[0m [1m<path>[0m.[m
+[7m Manual page git(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option affects options that expect path name like [1m--git-dir[0m and [1m--work-tree[0m in that their interpreta[m [7m Manual page git(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Ktions of the path names would be made relative to the working directory caused by the [1m-C[0m option. For example the fol[m [7m Manual page git(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Klowing invocations are equivalent:[m
+[7m Manual page git(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               git --git-dir=a.git --work-tree=b -C c status[m
+[7m Manual page git(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               git --git-dir=c/a.git --work-tree=c/b status[m
+[7m Manual page git(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -c <name>=<value>[m
+[7m Manual page git(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Pass a configuration parameter to the command. The value given will override values from configuration fi[m [7m Manual page git(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Kles. The <name> is expected in the same format as listed by [4mgit[24m [4mconfig[24m (subkeys separated by dots).[m
+[7m Manual page git(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Note that omitting the [1m=[0m in [1mgit[0m [1m-c[0m [1mfoo.bar[0m [1m...[0m  is allowed and sets [1mfoo.bar[0m to the boolean true value (ju[m [7m Manual page git(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Kst like [1m[foo]bar[0m would in a config file). Including the equals but with an empty value (like [1mgit[0m [1m-c[0m [1mfoo.bar=[0m [1m...[0m) se[m [7m Manual page git(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Kts [1mfoo.bar[0m to the empty string which[m
+[7m Manual page git(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mgit[0m [1mconfig[0m [1m--bool[0m will convert to [1mfalse[0m.[m
+[7m Manual page git(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       --exec-path[=<path>][m
+[7m Manual page git(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Path to wherever your core Git programs are installed. This can also be controlled by setting the GIT_EXE[m [7m Manual page git(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KC_PATH environment variable. If no path is given, [4mgit[24m will print the current setting and
