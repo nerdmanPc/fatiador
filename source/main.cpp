@@ -46,7 +46,7 @@ int main(int argc, char** argv){
   Plane plane_query(origin, normal);
 
   std::list<Segment> intersections;
-  //tree.all_intersections(plane_query, std::back_inserter(intersections));
+  tree.all_intersections(plane_query, std::back_inserter(intersections)); //Não funciona!! 
   
   return 0;
 }
