@@ -241,4 +241,109 @@ Commit message options
                           reuse message from specified commit
     --fixup <submissão>   use autosquash formatted message to fixup specified commit
     --squash <submissão>  use autosquash formatted message to squash specified commit
-    --reset-author        the commit is authored by me now (use
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <arquivo>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git commit -m ''[C
+Aborting commit due to empty commit message.
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git commit -m ''S'e'g'u'n'd'o' 'c'o'm'm'i't'[C
+[master 0bb9b03] Segundo commit
+ 1 file changed, 63 insertions(+), 1 deletion(-)
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git status
+No ramo master
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	[31mmodified:   typescript[m
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git add .
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git status
+No ramo master
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   typescript[m
+
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git commit -m ''a'g'o'r'a' 's'i'm'[C
+[master b904bab] agora sim
+ 1 file changed, 43 insertions(+), 1 deletion(-)
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git stau[Ktus
+No ramo master
+nothing to commit, working tree clean
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git remote add origin ''https://giithub.com/nerdmanPc/fatiador.git'[C
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ gt[Kit remote -v
+origin	https://github.com/nerdmanPc/fatiador.git (fetch)
+origin	https://github.com/nerdmanPc/fatiador.git (push)
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ gu[Kit push origin master
+Username for 'https://github.com': Pedro Costa
+Password for 'https://Pedro Costa@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nerdmanPc/fatiador.git/'
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git push origin master
+Username for 'https://github.com': Pedro Costa
+Password for 'https://Pedro Costa@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nerdmanPc/fatiador.git/'
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git push origin master
+nerUsername for 'https://github.com': dmanPC      nerdmanPc
+Password for 'https://nernerdmanPc@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nerdmanPc/fatiador.git/'
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git push origin master
+Username for 'https://github.com': nerdmanPc
+Password for 'https://nerdmanPc@github.com': 
+To https://github.com/nerdmanPc/fatiador.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/nerdmanPc/fatiador.git'
+dica: Updates were rejected because the tip of your current branch is behind
+dica: its remote counterpart. Integrate the remote changes (e.g.
+dica: 'git pull ...') before pushing again.
+dica: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git fetch
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git status[1Pfetch
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git fetchpush origin master[9Premote -vpush origin masterfetch[K[Kgit status
+No ramo master
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	[31mmodified:   typescript[m
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git add .
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[01;32mpedro@pedro-desktop[00m:[01;34m/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador[00m$ git commit[K[K[K[K[K[Kstatus
+No ramo master
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   typescript[m
+
+]0;pedro@pedro-desktop: /media/pedro/Pedro - HD Externo1/projeto_
