@@ -1,3 +1,8 @@
+/*
+  Baseado no exemplo 3.2 em:
+  https://doc.cgal.org/latest/AABB_tree/index.html
+*/
+
 #include <iostream>
 #include <fstream>
 #include <list>
@@ -12,6 +17,7 @@
 #include <CGAL/AABB_triangle_primitive.h>
 
 typedef CGAL::Simple_cartesian<double> Kernel;
+
 typedef Kernel::Triangle_3 Triangle;
 typedef Kernel::Plane_3 Plane;
 typedef Kernel::Point_3 Point;
@@ -21,13 +27,19 @@ typedef Kernel::Segment_3 Segment;
 typedef CGAL::Polyhedron_3<Kernel> Polyhedron;
 
 typedef Polyhedron::Facet_iterator Iterator;
-typedef CGAL::AABB_triangle_primitive <Kernel, Iterator> Primitive;
-typedef CGAL::AABB_traits <Kernel, Primitive> AABB_triangle_traits;
-typedef CGAL::AABB_tree <AABB_triangle_traits> AABB_tree;
+typedef CGAL::AABB_triangle_primitive<Kernel, Iterator> Primitive;
+typedef CGAL::AABB_traits<Kernel, Primitive> AABB_triangle_traits;
+typedef CGAL::AABB_tree<AABB_triangle_traits> AABB_tree;
+typedef AABB_tree::Primitive_id Primitive_id;
 
-void loadPolyhedron(const char* filepath, Polyhedron& polyhedron){
-  std::ifstream inFile(filepath);
-  inFile >> polyhedron;
+/* 
+O template abaixo representa a estrutura com o par ordenado <objeto, primitiva>, mas é impossível instanciá-lo:
+
+  typedef boost::optional< AABB_tree::Intersection_and_primitive_id<Plane>::Type > Plane_intersection;
+*/
+void loadPolyhedron(const char* filepath, Polyhedron * polyhedron){
+  std::ifstream inFile = std::ifstream(filepath);
+  inFile >> (*polyhedron);
   inFile.close();
 }
 
@@ -37,16 +49,16 @@ int main(int argc, char** argv){
     return -1;
   }
 
-  Polyhedron polyhedron;
-  loadPolyhedron(argv[1], polyhedron);
-  AABB_tree tree(polyhedron.facets_begin(), polyhedron.facets_end());
+  Polyhedron mesh;
+  loadPolyhedron(argv[1], &mesh);
+  AABB_tree tree(mesh.facets_begin(), mesh.facets_end());
 
-  Point origin(0.0, 0.0, 0.0);
-  Vector normal(0.0, 0.0, 1.0);
-  Plane plane_query(origin, normal);
+  Point origin = Point(0.0, 0.0, 0.0);
+  Vector normal = Vector(0.0, 0.0, 1.0);
+  Plane plane_query = Plane(origin, normal);
 
-  std::list<Segment> intersections;
-  tree.all_intersections(plane_query, std::back_inserter(intersections)); //Não funciona!! 
+  //std::list<Plane_intersection> intersections;
+  //tree.all_intersections(plane_query, std::back_inserter(intersections));
   
   return 0;
 }
