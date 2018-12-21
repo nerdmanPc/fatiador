@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/main.cpp
+iostream
+-
+fstream
+-
+list
+-
+CGAL/Simple_cartesian.h
+-
+CGAL/Polyhedron_3.h
+-
+CGAL/IO/Polyhedron_iostream.h
+-
+CGAL/AABB_tree.h
+-
+CGAL/AABB_traits.h
+-
+CGAL/AABB_triangle_primitive.h
+-
+

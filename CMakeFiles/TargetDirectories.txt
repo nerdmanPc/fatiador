@@ -1,0 +1,3 @@
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/CMakeFiles/rebuild_cache.dir
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/CMakeFiles/binary/main.dir
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/CMakeFiles/edit_cache.dir
