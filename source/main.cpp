@@ -33,7 +33,7 @@ typedef CGAL::AABB_tree<AABB_triangle_traits> AABB_tree;
 typedef AABB_tree::Primitive_id Primitive_id;
 
 //No exemplo, usa-se AABB_tree::Intersection_and_primitive_id<Plane>::Type, mas só funciona como abaixo:
-typedef AABB_tree::Intersection_and_primitive_id<Plane> Plane_intersection;
+typedef boost::optional< AABB_tree::Intersection_and_primitive_id<Plane> > Plane_intersection;
 
 void loadPolyhedron(const char* filepath, Polyhedron * polyhedron){
   std::ifstream inFile = std::ifstream(filepath);
@@ -55,8 +55,8 @@ int main(int argc, char** argv){
   Vector normal = Vector(0.0, 0.0, 1.0);
   Plane plane_query = Plane(origin, normal);
 
-  std::list<Plane_intersection> intersections;
-  //tree.all_intersections(plane_query, std::back_inserter(intersections));
+  //std::list<Primitive_id> intersections;
+  //tree.all_intersected_primitives(plane_query, std::back_inserter(intersections));
   
   return 0;
 }
