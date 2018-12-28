@@ -138,6 +138,21 @@ source/main.s:
 	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/main.s
 .PHONY : source/main.s
 
+# target to build an object file
+source/mesh.o:
+	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/mesh.o
+.PHONY : source/mesh.o
+
+# target to preprocess a source file
+source/mesh.i:
+	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/mesh.i
+.PHONY : source/mesh.i
+
+# target to generate assembly for a file
+source/mesh.s:
+	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/mesh.s
+.PHONY : source/mesh.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +165,9 @@ help:
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/mesh.o"
+	@echo "... source/mesh.i"
+	@echo "... source/mesh.s"
 .PHONY : help
 
 

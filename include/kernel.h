@@ -1,3 +1,6 @@
+#ifndef KERNEL_H
+#define KERNEL_H
+
 typedef long Integer;
 typedef double Rational;
 typedef double Real;
@@ -12,14 +15,10 @@ struct Real_2{
 
 struct Vertex_3{
   Real_3 position;
-  Real_3 normal;
 };
 
-struct Vertex_2{
-  Real_2 position;
-  Real_2 normal;
+struct Triangle_I{
+  size_t a, b, c;
 };
 
-struct Polygon_2{
-  
-};
+#endif

@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/main.cpp
-iostream
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/kernel.h
+
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/mesh.h
+vector
 -
 fstream
 -
-list
--
-CGAL/Simple_cartesian.h
--
-CGAL/Polyhedron_3.h
--
-CGAL/IO/Polyhedron_iostream.h
--
-CGAL/AABB_tree.h
--
-CGAL/AABB_traits.h
--
-CGAL/AABB_triangle_primitive.h
+kernel.h
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/kernel.h
+
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/main.cpp
+../include/mesh.h
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/mesh.h
+
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/mesh.cpp
+../include/mesh.h
+/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/mesh.h
+iostream
 -
 
