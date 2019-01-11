@@ -1,8 +1,6 @@
 #ifndef KERNEL_H
 #define KERNEL_H
 
-typedef long Integer;
-typedef double Rational;
 typedef double Real;
 
 struct Real_3{
@@ -19,6 +17,16 @@ struct Vertex_3{
 
 struct Triangle_I{
   size_t a, b, c;
+};
+
+struct Triangle_3{
+  Vertex_3 a, b, c;
+};
+
+struct PlaneIntersection_3{
+  char nVertices;
+  Vertex_3 vertices[3];
+  PlaneIntersection_3(Real zCoord, const Triangle_3& triangle);
 };
 
 #endif
