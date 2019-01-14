@@ -13,10 +13,12 @@ struct Real_2{
 
 struct Vertex_3{
   Real_3 position;
+  Vertex_3();
+  Vertex_3(Real zCoord, const Vertex_3& segmentStart, const Vertex_3& segmentEnd);
 };
 
 struct Triangle_I{
-  size_t a, b, c;
+  unsigned long a, b, c;
 };
 
 struct Triangle_3{

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/kernel.cpp" "/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/CMakeFiles/binary/main.dir/source/kernel.o"
   "/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/main.cpp" "/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/CMakeFiles/binary/main.dir/source/main.o"
   "/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/mesh.cpp" "/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/CMakeFiles/binary/main.dir/source/mesh.o"
   )

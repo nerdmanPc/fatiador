@@ -125,3 +125,11 @@ PlaneIntersection_3::PlaneIntersection_3(Real zCoord, const Triangle_3& triangle
     }
   }
 }
+
+Vertex_3::Vertex_3(Real zCoord, const Vertex_3& segmentStart, const Vertex_3& segmentEnd){
+  return;
+}
+
+Vertex_3::Vertex_3(){
+  return;
+}

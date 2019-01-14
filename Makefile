@@ -124,6 +124,21 @@ binary/main/fast:
 .PHONY : binary/main/fast
 
 # target to build an object file
+source/kernel.o:
+	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/kernel.o
+.PHONY : source/kernel.o
+
+# target to preprocess a source file
+source/kernel.i:
+	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/kernel.i
+.PHONY : source/kernel.i
+
+# target to generate assembly for a file
+source/kernel.s:
+	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/kernel.s
+.PHONY : source/kernel.s
+
+# target to build an object file
 source/main.o:
 	$(MAKE) -f CMakeFiles/binary/main.dir/build.make CMakeFiles/binary/main.dir/source/main.o
 .PHONY : source/main.o
@@ -162,6 +177,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... binary/main"
 	@echo "... edit_cache"
+	@echo "... source/kernel.o"
+	@echo "... source/kernel.i"
+	@echo "... source/kernel.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
