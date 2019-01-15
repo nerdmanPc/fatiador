@@ -5,6 +5,9 @@ typedef double Real;
 
 struct Real_3{
   Real x, y, z;
+  Real_3 operator* (const Real& scalar) const ;
+  Real_3 operator+ (const Real_3& other) const ;
+  Real_3 operator- (const Real_3& other) const ;
 };
 
 struct Real_2{
@@ -14,7 +17,7 @@ struct Real_2{
 struct Vertex_3{
   Real_3 position;
   Vertex_3();
-  Vertex_3(Real zCoord, const Vertex_3& segmentStart, const Vertex_3& segmentEnd);
+  Vertex_3(Real zCoord, const Vertex_3& vertexA, const Vertex_3& vertexB); //
 };
 
 struct Triangle_I{
