@@ -11,6 +11,7 @@ class Mesh{
 public:
   Mesh(const char *filepath);
   void save(const char *filepath);
+  Triangle_3 testTriangle(); //return first triangle
   ~Mesh();
 };
 

@@ -18,6 +18,7 @@ struct Vertex_3{
   Real_3 position;
   Vertex_3();
   Vertex_3(Real zCoord, const Vertex_3& vertexA, const Vertex_3& vertexB); //
+  void testPrint();
 };
 
 struct Triangle_I{
@@ -32,6 +33,7 @@ struct PlaneIntersection_3{
   char nVertices;
   Vertex_3 vertices[3];
   PlaneIntersection_3(Real zCoord, const Triangle_3& triangle);
+  void testPrint(); //TODO
 };
 
 #endif

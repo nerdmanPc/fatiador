@@ -1,4 +1,5 @@
 #include "../include/kernel.h"
+#include <iostream>
 
 Real_3 Real_3::operator* (const Real& scalar) const {
   return {
@@ -157,4 +158,16 @@ Vertex_3::Vertex_3(Real zCoord, const Vertex_3& vertexA, const Vertex_3& vertexB
 
 Vertex_3::Vertex_3(){
   return;
+}
+
+void PlaneIntersection_3::testPrint(){
+  std::cout << (int)nVertices << std::endl;
+  for(int i=0; i<nVertices; i++){
+    vertices[i].testPrint(); //TODO
+  }
+  std::cout << std::endl;
+}
+
+void Vertex_3::testPrint(){
+  std::cout << position.x << ' ' << position.y << ' ' << position.z << std::endl;
 }

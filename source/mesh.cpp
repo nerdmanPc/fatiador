@@ -1,5 +1,5 @@
 #include "../include/mesh.h"
-#include <iostream>
+
 
 Mesh::Mesh(const char *filepath){
   std::ifstream meshFile;
@@ -65,6 +65,16 @@ void Mesh::save(const char *filepath){
   }
 
   meshFile.close();
+}
+
+Triangle_3 Mesh::testTriangle(){
+  if (!facets.empty()){
+    return {
+      vertices[facets[0].a],
+      vertices[facets[0].b],
+      vertices[facets[0].c]
+    }; //TODO
+  }
 }
 
 Mesh::~Mesh(){
