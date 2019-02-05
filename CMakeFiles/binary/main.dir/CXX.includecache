@@ -6,27 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/kernel.h
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/kernel.h
 
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/mesh.h
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/mesh.h
 vector
 -
 fstream
 -
 kernel.h
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/kernel.h
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/kernel.h
 
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/kernel.cpp
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/slice.h
 ../include/kernel.h
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/kernel.h
-iostream
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/kernel.h
+../include/mesh.h
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/mesh.h
+vector
 -
 
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/main.cpp
-../include/mesh.h
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/mesh.h
-
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/source/mesh.cpp
-../include/mesh.h
-/media/pedro/Pedro - HD Externo1/projeto_reconstrucao/fatiador/include/mesh.h
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/source/slice.cpp
+../include/slice.h
+/media/pedro/Pedro - HD Externo/projeto_reconstrucao/fatiador/include/slice.h
 

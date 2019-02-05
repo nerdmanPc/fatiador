@@ -33,7 +33,7 @@ struct PlaneIntersection_3{
   char nVertices;
   Vertex_3 vertices[3];
   PlaneIntersection_3(Real zCoord, const Triangle_3& triangle);
-  void testPrint(); //TODO
+  void testPrint();
 };
 
 #endif

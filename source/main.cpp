@@ -8,7 +8,7 @@ int main(int argc, char** argv){
   Mesh mesh(argv[1]);
 */
   Vertex_3 a, b, c;
-  a.position = {0.0, 0.0, -1.0};
+  a.position = {0.0, 0.0, 1.0};
   b.position = {1.0, 0.0, 1.0};
   c.position = {-1.0, 0.0, 1.0};
   Triangle_3 testTriangle = {a, b, c};

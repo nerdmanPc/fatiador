@@ -156,9 +156,7 @@ Vertex_3::Vertex_3(Real zCoord, const Vertex_3& vertexA, const Vertex_3& vertexB
   position = vertexA.position + (vertexB.position - vertexA.position) * t;
 }
 
-Vertex_3::Vertex_3(){
-  return;
-}
+Vertex_3::Vertex_3(){}
 
 void PlaneIntersection_3::testPrint(){
   std::cout << (int)nVertices << std::endl;

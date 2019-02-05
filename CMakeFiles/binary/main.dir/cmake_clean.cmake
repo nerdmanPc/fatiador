@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/binary/main.dir/source/main.o"
-  "CMakeFiles/binary/main.dir/source/mesh.o"
-  "CMakeFiles/binary/main.dir/source/kernel.o"
+  "CMakeFiles/binary/main.dir/source/main.cpp.o"
+  "CMakeFiles/binary/main.dir/source/mesh.cpp.o"
+  "CMakeFiles/binary/main.dir/source/kernel.cpp.o"
+  "CMakeFiles/binary/main.dir/source/slice.cpp.o"
   "binary/main.pdb"
   "binary/main"
 )

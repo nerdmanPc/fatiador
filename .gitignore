@@ -1,2 +1,7 @@
-typescript
 .vscode
+binary
+typescript
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile

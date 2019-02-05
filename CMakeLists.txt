@@ -1,1 +1,1 @@
-add_executable(binary/main source/main.cpp source/mesh.cpp source/kernel.cpp)
+add_executable(binary/main source/main.cpp source/mesh.cpp source/kernel.cpp source/slice.cpp)

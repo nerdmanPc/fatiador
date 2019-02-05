@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/binary/main.dir/source/main.o CMakeFiles/binary/main.dir/source/mesh.o CMakeFiles/binary/main.dir/source/kernel.o  -o binary/main 
+/usr/bin/c++    -rdynamic CMakeFiles/binary/main.dir/source/main.cpp.o CMakeFiles/binary/main.dir/source/mesh.cpp.o CMakeFiles/binary/main.dir/source/kernel.cpp.o CMakeFiles/binary/main.dir/source/slice.cpp.o  -o binary/main 

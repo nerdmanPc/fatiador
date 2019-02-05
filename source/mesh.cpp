@@ -67,16 +67,44 @@ void Mesh::save(const char *filepath){
   meshFile.close();
 }
 
-Triangle_3 Mesh::testTriangle(){
-  if (!facets.empty()){
-    return {
-      vertices[facets[0].a],
-      vertices[facets[0].b],
-      vertices[facets[0].c]
-    }; //TODO
-  }
+Mesh::FacetIterator Mesh::facetsBegin(){
+  auto arg1 = facets.begin();
+  return FacetIterator(arg1, vertices);
 }
 
-Mesh::~Mesh(){
+Mesh::FacetIterator Mesh::facetsEnd(){
+  auto arg1 = facets.begin();
+  return FacetIterator(arg1, vertices);
+}
 
+Mesh::FacetIterator::FacetIterator(){
+  _vector = nullptr;
+}
+
+Mesh::FacetIterator::FacetIterator(
+  std::vector<Triangle_I>::iterator& value,
+  std::vector<Vertex_3>& vector
+){
+  _value = value;
+  _vector = &vector;
+}
+
+Triangle_3 Mesh::FacetIterator::operator*(){
+  return {
+    (*_vector)[_value->a],
+    (*_vector)[_value->b],
+    (*_vector)[_value->c]
+  };
+}
+
+Mesh::FacetIterator Mesh::FacetIterator::operator++(){
+  ++_value;
+}
+
+bool Mesh::FacetIterator::operator==(Mesh::FacetIterator& other){
+  return _value == other._value;
+}
+
+bool Mesh::FacetIterator::operator!=(Mesh::FacetIterator& other){
+  return _value != other._value;
 }
